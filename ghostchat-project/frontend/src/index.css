@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 2%;
+  --foreground: 0 0% 93%;
+  --card: 0 0% 4%;
+  --card-foreground: 0 0% 100%;
+  --primary: 354 96% 43%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 10%;
+  --secondary-foreground: 240 5% 65%;
+  --muted: 0 0% 7%;
+  --muted-foreground: 240 4% 46%;
+  --accent: 354 80% 10%;
+  --accent-foreground: 354 96% 43%;
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 240 4% 16%;
+  --input: 240 4% 10%;
+  --ring: 354 96% 43%;
+  --radius: 0.3rem;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body, #root { height: 100%; width: 100%; overflow: hidden; }
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+.font-heading { font-family: 'Space Grotesk', sans-serif; }
+.font-mono { font-family: 'JetBrains Mono', monospace; }
+
+.bubble-me { background: hsl(var(--primary)); color: white; border-radius: 1rem 1rem 0.25rem 1rem; }
+.bubble-other { background: hsl(var(--secondary)); color: hsl(var(--foreground)); border-radius: 1rem 1rem 1rem 0.25rem; }
