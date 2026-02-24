@@ -4,4 +4,5 @@ python-dotenv>=1.0.1
 aiosqlite==0.22.1
 httpx
 pydantic>=2.6.4
+
 python-telegram-bot==22.6
